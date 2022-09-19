@@ -21,13 +21,16 @@ body{
     background-color: var(--white);
     font-family: 'PT Sans', sans-serif;
 }
+p{
+    line-height: 1.5rem;
 
+}
 .debug{
     border: 1px solid var(--black);
 }
 
 .container{
-    width: 600px;
+    /*width: 600px;*/
     margin: 0 auto;
 }
 .d-flex{
@@ -86,6 +89,7 @@ MAIN
     border-radius: 0.75rem;
 }
 
+/* CARD SECT 1 */
 .card-generals{
     width: 100%;
     display: flex;
@@ -125,10 +129,64 @@ MAIN
     border: none;
     border-radius: 30px;
 }
-.fa-solid{
+.card .fa-solid{
     font-size: 40px;
+    text-align: center;
+    display: block;
+    margin-top: 1em;
     color: var(--blue);
 }
+
+/*PLANNING 1*/
+.planning1, .planning2{
+    width: 50%;
+    padding: 0.5rem;
+}
+.planning1 img{
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+.planning1 h3, .planning1 p{
+    color: white;
+    margin: 2rem 0;
+}
+
+/*PLANNING 2*/
+.planning2{
+    background-color: white;
+    margin: 200px 20px 30px 30px;
+    border-radius: 50px;
+    padding: 2rem;
+    text-align: center;
+}
+.planning2 img{
+    width: 60%;
+    margin-top: 5.5rem;
+}
+.planning2 h3, .planning2 p{
+    color: black;
+    margin: 1rem 0;
+}
+
+.planning2 button{
+    background-color: var(--purple);
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.planning2 .fa-down-long{
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+
+
+
 /*
 ####################################################
 FOOTER
@@ -161,7 +219,6 @@ RESPONSIVE 768px
     .container{
         max-width: 750px;
     }
-    
     #intro .cards{
         display: flex;
         flex-flow: row wrap;
