@@ -27,7 +27,7 @@ body{
 }
 
 .container{
-    max-width: 600px;
+    width: 600px;
     margin: 0 auto;
 }
 .d-flex{
@@ -48,12 +48,10 @@ HEADER
 header{
     background-color: var(--blue);
     color: var(--white);
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     width: 100%;
-    top: 0;
-    left: 0;
     margin-bottom: 50px;
-    position: fixed;
+    display: block;
 }
 .main-menu{
     display: none;
@@ -65,6 +63,11 @@ header a{
 }
 header img{
     width: 80px;
+}
+header .fa-solid{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 1rem;
 }
 /*
 ####################################################
@@ -80,12 +83,52 @@ MAIN
 .card{
     background-color: var(--lightblue);
     margin-bottom: 1.5rem;
-    padding: 0.5rem;
     border-radius: 0.75rem;
 }
 
+.card-generals{
+    width: 100%;
+    display: flex;
+}
+.card-info, .card-img{
+    width: 50%;
+}
+.card-info{
+    padding: 0.5rem;
+}
+.card-img img{
+    width: 100%;
+    margin-top: 5.5rem;
+}
+.card h3{
+    font-size: 20px;
+    color: var(--blue);
+    margin: 30px 0;
+    text-align: center;
+}
 
-
+.card p{
+    padding: 10px;
+    margin: 30px 0;
+    text-align: center;
+}
+.card-info p{
+    text-align: left;
+}
+.card-info button{
+    background-color: var(--blue);
+    color: var(--white);
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+}
+.fa-solid{
+    font-size: 40px;
+    color: var(--blue);
+}
 /*
 ####################################################
 FOOTER
@@ -99,13 +142,26 @@ footer{
 
 /*
 ####################################################
-RESPONSIVE
+RESPONSIVE 480px
+#####################################################
+*/
+@media screen and (min-width: 480px){
+
+
+}
+
+
+/*
+####################################################
+RESPONSIVE 768px
 #####################################################
 */
 @media screen and (min-width: 768px){
+    
     .container{
         max-width: 750px;
     }
+    
     #intro .cards{
         display: flex;
         flex-flow: row wrap;
