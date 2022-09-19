@@ -26,7 +26,6 @@ body{
     border: 1px solid var(--black);
 }
 
-
 .container{
     max-width: 600px;
     margin: 0 auto;
@@ -50,6 +49,11 @@ header{
     background-color: var(--blue);
     color: var(--white);
     padding: 1rem 2rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-bottom: 50px;
+    position: fixed;
 }
 .main-menu{
     display: none;
@@ -59,7 +63,9 @@ header a{
     color: var(--white);
     text-decoration: none;
 }
-
+header img{
+    width: 80px;
+}
 /*
 ####################################################
 MAIN
@@ -67,7 +73,6 @@ MAIN
 */
 #planning, #features, #start{
     background-color: var(--purple);
-    height: 80px;
 }
 #intro{
     padding: 0 2rem;
@@ -75,12 +80,10 @@ MAIN
 .card{
     background-color: var(--lightblue);
     margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.75rem;
 }
-/*
-main{
-    min-height: 3000px;
-}
-*/
+
 
 
 /*
@@ -92,7 +95,6 @@ FOOTER
 footer{
     background-color: var(--darkgrey);
     padding: 1rem 2rem;
-    min-height: 300px;
 }
 
 /*
