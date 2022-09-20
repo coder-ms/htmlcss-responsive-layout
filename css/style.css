@@ -42,6 +42,9 @@ p{
 .align-center{
     align-items: center;
 }
+button{
+    cursor: pointer;
+}
 
 /*
 ####################################################
@@ -80,7 +83,7 @@ MAIN
 #planning, #features, #start{
     background-color: var(--purple);
 }
-#intro, #section{
+#intro, #testimonials{
     background-color: var(--white);
     margin: 1rem 0;
 }
@@ -229,42 +232,37 @@ CARD SECT 3
     background-color: var(--purple);
 }
 .person-img img{
-    width: 66%;
-    height: 60%;
+    height: 65%;
+    width: 70%;
     border-radius: 50%;
-    margin: 2.5rem 2rem;
+    margin: 1.5rem 0.5rem;
 }
 .person-info h3, .person-info h5{
     font-size: 1rem;
     color: var(--white);
     text-align: left;
 }
-.person-info p{
-    text-align: left;
+.person-info h6{
+    color: var(--white);
     font-size: 0.75rem;
-    color: white;
+    margin: 1.5rem 1rem;
     line-height: 1.5rem;
 }
-#section span{
+#testimonials span{
     color: white;
     font-size: 2rem;
 }
-#section h5, #section p{
+#testimonials h5, #testimonials p{
     text-align: center;
     margin: 1rem 0;
 }
-#section h4{
+#testimonials h4{
     color: var(--purple);
     font-size: 2rem;
     text-align: center;
     margin: 1rem 0;
 }
- #section h6{
-    color: var(--white);
-    font-size: 0.75rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-}
+
 
 /* 
 ---------------------
@@ -394,6 +392,53 @@ CARD SECT 5
     font-size: 1rem;
     margin-right: 0.75rem;
 }
+
+/* 
+---------------------
+STARTED
+---------------------
+*/
+.started{
+    margin: 0 auto;
+    width: 80%;
+    padding: 3rem;
+}
+.started h5,  .started h3, .started h2, .started button, .started p,  .started .start-btn, .started .copyright{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.started h5{
+    color: #dddddd;
+    font-weight: 100;
+}
+.started h3{
+    font-size: 2rem;
+    color: white;
+}
+.started h2{
+    font-size: 3rem;
+    color: var(--yellow);
+}
+.started p{
+    font-size: 0.75rem;
+    color: var(--white);
+    padding: 0 6rem;
+}
+.started button{
+    background-color: var(--white);
+    width: 8rem;
+    height: 3rem;
+    border: none;
+    border-radius: 4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--purple);
+}
+.started .start-btn, .started .copyright{
+    font-size: 0.75rem;
+    color: var(--white);
+}
+
 /*
 ####################################################
 FOOTER
@@ -412,7 +457,21 @@ RESPONSIVE 480px
 */
 @media screen and (min-width: 480px){
 
-
+    .container{
+        max-width: 100%;
+    }
+    #intro .card{
+        margin-right: 0.75rem;
+        margin-left: 0.75rem;
+        width: 100%;
+    }
+    .card-info, .card-img{
+        width: 100%;
+    }
+    .card-img img{
+        width: 100%;
+        margin-top: 1.5rem;
+    }
 }
 
 
