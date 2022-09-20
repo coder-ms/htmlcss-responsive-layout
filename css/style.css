@@ -24,11 +24,6 @@ body{
 p{
     line-height: 1.5rem;
 }
-/*
-.debug{
-    border: 1px solid var(--black);
-}
-*/
 .container{
     max-width: 48rem;
     margin: 0 auto;
@@ -438,7 +433,11 @@ STARTED
     font-size: 0.75rem;
     color: var(--white);
 }
-
+footer p, footer .copyright{
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
 /*
 ####################################################
 FOOTER
@@ -467,6 +466,7 @@ RESPONSIVE 480px
     }
     .card-info, .card-img{
         width: 100%;
+        flex-direction: column;
     }
     .card-img img{
         width: 100%;
@@ -500,3 +500,16 @@ RESPONSIVE 768px
         width: calc(66.66% - 1.5rem);
     }
 }
+
+/*
+####################################################
+RESPONSIVE 768px
+#####################################################
+*/
+@media screen and (min-width: 1200px){
+    body{
+        max-width: 1200px;
+    }
+}
+
+
