@@ -24,10 +24,11 @@ body{
 p{
     line-height: 1.5rem;
 }
+/*
 .debug{
     border: 1px solid var(--black);
 }
-
+*/
 .container{
     max-width: 48rem;
     margin: 0 auto;
@@ -79,8 +80,9 @@ MAIN
 #planning, #features, #start{
     background-color: var(--purple);
 }
-#intro{
+#intro, #section{
     background-color: var(--white);
+    margin: 1rem 0;
 }
 #intro, #features{
     padding: 0 2rem;
@@ -189,7 +191,9 @@ CARD SECT 1
     color: black;
     margin: 1rem 0;
 }
-
+.planning2 p{
+    font-style: italic;
+}
 .planning2 button{
     background-color: var(--purple);
     width: 2.5rem;
@@ -215,59 +219,52 @@ CARD SECT 3
     display: flex;
 }
 .person-info{
+    border-radius: 0 1rem 1rem 0;
     width: 80%;
+    background-color: var(--purple);
 }
 .person-img{
+    border-radius: 1rem 0 0 1rem;
     width: 20%;
+    background-color: var(--purple);
 }
 .person-img img{
-    width: 72%;
+    width: 66%;
     height: 60%;
-    border-radius: 100%;
+    border-radius: 50%;
     margin: 2.5rem 2rem;
 }
-.person-info h3{
+.person-info h3, .person-info h5{
     font-size: 1rem;
-    color: var(--blue);
-    text-align: center;
+    color: var(--white);
+    text-align: left;
 }
 .person-info p{
     text-align: left;
     font-size: 0.75rem;
-}
-
-/*PLANNING 1
-.planning1, .planning2{
-    width: 50%;
-    padding: 0.5rem;
-}
-.planning1 img{
-    width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-}
-.planning1 h3, .planning1 p{
     color: white;
-    margin: 2rem 0;
+    line-height: 1.5rem;
 }
-
-PLANNING 2
-.planning2{
-    background-color: white;
-    margin: 12rem 1.25rem 1.75rem 1.75rem;
-    border-radius: 4rem;
-    padding: 2rem;
+#section span{
+    color: white;
+    font-size: 2rem;
+}
+#section h5, #section p{
     text-align: center;
-}
-.planning2 img{
-    width: 60%;
-    margin-top: 5.5rem;
-}
-.planning2 h3, .planning2 p{
-    color: black;
     margin: 1rem 0;
 }
-*/
+#section h4{
+    color: var(--purple);
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+ #section h6{
+    color: var(--white);
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
 
 /* 
 ---------------------
@@ -322,6 +319,80 @@ CARD SECT 4
     border: none;
     margin: 1rem;
     border-radius: 1.75rem;
+}
+
+
+
+
+/* 
+---------------------
+CARD SECT 5
+---------------------
+*/
+
+/*ABOUT 1*/
+.about1{
+    width: 60%;
+    padding: 0.5rem;
+    margin: 2rem 0;
+}
+.about1 img{
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+.about1 h3{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--purple);
+    margin: 2rem 0;
+}
+.about1 p{
+    color: black;
+    font-size: 0.8rem;
+    margin: 2rem 0;
+}
+
+/*ABOUT 2*/
+.about2{
+    width: 40%;
+    margin: 3rem 1.25rem 1.75rem 1.75rem;
+    border-radius: 4rem;
+    padding: 2rem;
+    text-align: center;
+}
+.about2 img{
+    width: 60%;
+    border-radius: 50%;
+}
+.about2 span{
+    font-size: 3rem;
+    margin: 1rem 0;
+    font-weight: bold;
+    color: var(--purple);
+}
+.about2 p{
+    color: var(--purple);
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: left;
+    padding: 0 0 1.5rem 1rem;
+}
+.about2 button{
+    background-color: var(--purple);
+    width: 11rem;
+    height: 2rem;
+    border: none;
+    border-radius: 4rem;
+    color: white;
+    margin: 1.5rem 1.25rem 1.5rem 0.5rem;
+    
+}
+.about2 .fa-brands{
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-right: 0.75rem;
 }
 /*
 ####################################################
